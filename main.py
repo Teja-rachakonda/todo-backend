@@ -16,7 +16,8 @@ models.Base.metadata.create_all(bind=engine)
 
 origins = [
     "http://localhost:3000",
-    "https://todo-frontend.vercel.app"
+    #"https://todo-frontend.vercel.app"
+    "https://todo-frontend-7ycy.vercel.app"
 ]
 
 app = FastAPI()
