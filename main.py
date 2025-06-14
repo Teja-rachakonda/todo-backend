@@ -14,11 +14,17 @@ SessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False)
 
 models.Base.metadata.create_all(bind=engine)
 
+origins = [
+    "http://localhost:3000",
+    "https://todo-frontend.vercel.app"
+]
+
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
-    #allow_credentials=True,
+    #allow_origins=["http://localhost:3000"],
+    allow_origins=origins,
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
