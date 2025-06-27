@@ -1,5 +1,11 @@
-fastapi
-uvicorn
-sqlalchemy
-psycopg2-binary
-python-dotenv
+streamlit
+pdfplumber
+pillow
+chromadb
+langchain
+langchain_community
+sentence-transformers
+transformers
+groq
+torch
+langsmith
